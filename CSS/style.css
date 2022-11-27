@@ -21,6 +21,10 @@ html {
   overflow-x: hidden;
 }
 
+section {
+  padding: 2rem 9%;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -79,6 +83,9 @@ header .fa-bars {
   display: none;
 }
 
+.home {
+}
+
 /* media query */
 @media (max-width: 991px) {
   html {
@@ -106,7 +113,7 @@ header .fa-bars {
   }
 
   header #toggler:checked ~ .navbar {
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
   header .navbar a {

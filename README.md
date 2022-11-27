@@ -1,2 +1,0 @@
-# intern-telkom
-Saku Digital

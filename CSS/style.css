@@ -25,6 +25,19 @@ section {
   padding: 2rem 9%;
 }
 
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  color: #333;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: rgba(255, 51, 153, .05);
+}
+
+.heading span{
+  color: var(--blue);
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -130,6 +143,15 @@ header .fa-bars {
   line-height: 1.5;
 }
 
+.about .row{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+}
+
 /* media query */
 @media (max-width: 991px) {
   html {
@@ -139,6 +161,15 @@ header .fa-bars {
   header {
     padding: 2rem;
   }
+
+  section{
+    padding: 2rem;
+  }
+
+  .home{
+    background-position: center;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -154,6 +185,14 @@ header .fa-bars {
     background: #eee;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .home .comtent h3{
+    font-size: 5rem;
+  }
+
+  .home .comtent span{
+    font-size: 2.5rem;
   }
 
   header #toggler:checked ~ .navbar {
@@ -172,5 +211,9 @@ header .fa-bars {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .heading{
+    font-size: 3rem;
   }
 }
